@@ -1,9 +1,8 @@
 class Solution {
 public:
     int maxArea(vector<int>& height) {
-        int n = height.size();
         int maxwt = 0;
-        int i = 0, j = n - 1;
+        int i = 0, j = height.size() - 1;
         while (i < j) {
             int wid = j - i;
             int ht = min(height[i], height[j]);
