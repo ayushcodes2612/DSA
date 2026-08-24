@@ -6,8 +6,8 @@ public:
         while (i < j) {
             int wid = j - i;
             int ht = min(height[i], height[j]);
-          int currwater = wid * ht;
-            maxwt = max(maxwt, currwater);
+          int cw = wid * ht;
+            maxwt = max(maxwt, cw);
             height[i] < height[j] ? i++ : j--;
         }
         return maxwt;
