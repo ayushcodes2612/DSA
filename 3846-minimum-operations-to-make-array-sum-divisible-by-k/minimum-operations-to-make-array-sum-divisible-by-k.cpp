@@ -7,14 +7,9 @@ public:
         {
             totalsum += nums[i];
         }
-        while(totalsum%k!=0)
-        {
             if(totalsum%k==0)
         return 0;
         else
-        totalsum--;
-        count++;
-        }
-        return count;
+        return totalsum%k;
     }
 };
