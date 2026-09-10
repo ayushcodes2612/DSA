@@ -1,15 +1,13 @@
 class Solution {
 public:
     int minOperations(vector<int>& nums, int k) {
-        int count = 0;
-        int totalsum = 0;
-        for(int i = 0; i<nums.size(); i++)
-        {
-            totalsum += nums[i];
+        int t = 0;
+        for (int i = 0; i < nums.size(); i++) {
+            t += nums[i];
         }
-            if(totalsum%k==0)
-        return 0;
+        if (t % k == 0)
+            return 0;
         else
-        return totalsum%k;
+            return t % k;
     }
 };
