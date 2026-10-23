@@ -23,8 +23,6 @@ public:
             }
         }
         // 3rd part reverse/sort the array from pivot to last element
-        int m = piv + 1;
-        int k = n - 1;
        reverse(nums.begin()+piv+1,nums.end());
     }
 };
