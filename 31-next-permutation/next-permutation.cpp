@@ -25,10 +25,6 @@ public:
         // 3rd part reverse/sort the array from pivot to last element
         int m = piv + 1;
         int k = n - 1;
-        while (m <= k) {
-            swap(nums[m], nums[k]);
-            m++;
-            k--;
-        }
+       reverse(nums.begin()+piv+1,nums.end());
     }
 };
